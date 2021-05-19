@@ -309,7 +309,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-describe('Testing challenge 5', () => {
+xdescribe('Testing challenge 5', () => {
   const firstNums = [1, 2, 3];
   const secondNums = [1, 2, 3, 4];
 
