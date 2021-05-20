@@ -359,7 +359,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-describe('Testing challenge 6', () => {
+xdescribe('Testing challenge 6', () => {
   test('It should sort items by their price', () => {
     expect(sortByPrice([
       {name: 'Sweatshirt', price: 45},
