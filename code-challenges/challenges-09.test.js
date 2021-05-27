@@ -68,7 +68,8 @@ xdescribe('Testing challenge 3', () => {
 
 const checkValues = (obj, value) => {
   // Solution code here...
-  // return obj.includes(value)
+  // return obj.test(value);
+  return Object.values(obj).includes(value)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -203,14 +204,9 @@ describe('Testing challenge 6', () => {
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  
-  // Solution code here...
-  return arr.map((item)=>{
-    if (item.children==character)
-    return item.name
-  })
- 
-
+  character=/children/;
+  return Object.keys(arr).match(character)
+  //  (Object.keys(arr).includes(character)=='children'){
 };
 
 /* ------------------------------------------------------------------------------------------------
